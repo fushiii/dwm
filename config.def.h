@@ -2,10 +2,10 @@
 
 /* appearance */
 #if ROUNDED_CORNERS_PATCH
-static const unsigned int borderpx       = 0;   /* border pixel of windows */
-static const int corner_radius           = 0;
+static const unsigned int borderpx       = 3;   /* border pixel of windows */
+static const int corner_radius           = 5;
 #else
-static const unsigned int borderpx       = 1;   /* border pixel of windows */
+static const unsigned int borderpx       = 3;   /* border pixel of windows */
 #endif // ROUNDED_CORNERS_PATCH
 static const unsigned int snap           = 32;  /* snap pixel */
 #if SWALLOW_PATCH
@@ -510,7 +510,6 @@ static const Rule rules[] = {
 																																			//
 	RULE(.class = "GParted", .tags = 1 << 7, .switchtag = 1, .isfloating = 1, .iscentered = 1) // tag-8
 	RULE(.class = "Xfce4-power-manager-settings", .tags = 1 << 7, .switchtag = 1, .isfloating = 1, .iscentered = 1)
-
 	#if SCRATCHPADS_PATCH
 	RULE(.instance = "spterm", .tags = SPTAG(0), .isfloating = 1)
 	#endif // SCRATCHPADS_PATCH

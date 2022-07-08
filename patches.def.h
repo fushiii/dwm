@@ -116,7 +116,7 @@
 #define BAR_TAGGRID_PATCH 0
 
 /* Show status in bar */
-#define BAR_STATUS_PATCH 0
+#define BAR_STATUS_PATCH 1
 
 /* This patch adds a clickable button to the left hand side of the statusbar.
  * https://dwm.suckless.org/patches/statusbutton/
@@ -137,7 +137,7 @@
 #define BAR_STATUS2D_PATCH 1
 
 /* Supplementary patch should you want to disable alpha for the status2d section */
-#define BAR_STATUS2D_NO_ALPHA_PATCH 1
+#define BAR_STATUS2D_NO_ALPHA_PATCH 0
 
 /* Addition to the status2d patch that allows the use of terminal colors (color0 through color15)
  * from xrdb in the status, allowing programs like pywal to change statusbar colors.
@@ -163,7 +163,7 @@
 /* This patch underlines the selected tag, or optionally all tags.
  * https://dwm.suckless.org/patches/underlinetags/
  */
-#define BAR_UNDERLINETAGS_PATCH 0
+#define BAR_UNDERLINETAGS_PATCH 1
 
 /* This patch adds the window icon next to the window title in the bar.
  *
@@ -207,7 +207,7 @@
  * remaining space. These options allow you explicitly add padding should
  * you need it.
  */
-#define BAR_TITLE_RIGHT_PAD_PATCH 1
+#define BAR_TITLE_RIGHT_PAD_PATCH 0
 #define BAR_TITLE_LEFT_PAD_PATCH 1
 
 /**
@@ -232,7 +232,7 @@
  * when including this patch.
  * https://dwm.suckless.org/patches/alpha/
  */
-#define BAR_ALPHA_PATCH 1
+#define BAR_ALPHA_PATCH 0
 
 /* This patch introduces alternative tags which can be switched on the fly for the
  * sole purpose of providing visual aid.
