@@ -2,6 +2,9 @@
 #include "bar_indicators.h"
 #include "bar_tagicons.h"
 
+#if DIRECTIONALFOCUS_PATCH
+#include "directionalfocus.h"
+#endif
 #if BAR_ALPHA_PATCH
 #include "bar_alpha.h"
 #endif

@@ -930,9 +930,23 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_q,          quit,                   {0} },
 	{ MODKEY,             					XK_space,      togglefloating,         {0} }, // make focused window float
 
-	{ MODKEY,                       XK_Left,       setmfact,               {.f = -0.05} },
-	{ MODKEY,                       XK_Right,      setmfact,               {.f = +0.05} },
+	{ MODKEY|ShiftMask,                       XK_Left,       setmfact,               {.f = -0.05} },
+	{ MODKEY|ShiftMask,                       XK_Right,      setmfact,               {.f = +0.05} },
 
+	#if DIRECTIONALFOCUS_PATCH
+	// Directional focus
+
+	{ MODKEY,                     XK_Right,  focusright,     {0} },					// focus right
+	{ MODKEY,                     XK_Left,   focusleft,      {0} },					// focus left
+	{ MODKEY,                     XK_Down,   focusdown,      {0} },					// focus down
+	{ MODKEY,                     XK_Up,     focusup,        {0} },					// focus up
+
+	{ MODKEY,                     XK_h,   focusleft,         {0} },					// focus left
+	{ MODKEY,                     XK_l,  focusright,         {0} },					// focus right
+
+	{ MODKEY,                     XK_j,   	focusdown,         {0} },					// focus down
+	{ MODKEY,                     XK_k,     focusup,         {0} },					// focus up
+	#endif // DIRECTIONAL_FOCUS
 
 	#if CYCLELAYOUTS_PATCH
 	{ MODKEY|ShiftMask|ControlMask, XK_space,      cyclelayout,            {.i = +1 } },
